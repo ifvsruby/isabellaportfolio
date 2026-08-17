@@ -65,11 +65,8 @@ export default function ConversionPillars() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-signal/5 blur-[150px] rounded-[100%] pointer-events-none opacity-50"></div>
 
         <div className="pillar-header flex flex-col mb-16 md:mb-24 relative z-10">
-          <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full w-max mb-6">
-            <span className="w-2 h-2 rounded-full bg-signal animate-pulse"></span>
-            <span className="font-display font-bold text-mist text-xs tracking-[0.2em] uppercase">
-              A Metodologia
-            </span>
+          <div className="font-display font-bold text-signal text-xs tracking-[0.2em] mb-6 uppercase">
+            {"// A METODOLOGIA"}
           </div>
           <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight max-w-3xl">
             Pilares da <br className="hidden md:block"/>

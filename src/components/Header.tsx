@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { siteConfig } from "@/data/site";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -98,7 +99,7 @@ export default function Header() {
           <Link href="#projetos" onClick={() => setMobileMenuOpen(false)}>Projetos</Link>
           <Link href="#servicos" onClick={() => setMobileMenuOpen(false)}>Serviços</Link>
           <Link href="#sobre" onClick={() => setMobileMenuOpen(false)}>Sobre</Link>
-          <Link href="#contato" onClick={() => setMobileMenuOpen(false)} className="text-signal mt-4 border border-signal/50 px-8 py-4 rounded-full text-xl">Iniciar projeto</Link>
+          <a href={siteConfig.whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="text-signal mt-4 border border-signal/50 px-8 py-4 rounded-full text-xl">Iniciar projeto</a>
         </nav>
       </div>
     </>
