@@ -58,7 +58,7 @@ export default function ConversionPillars() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="py-24 lg:py-32 bg-[#050505] text-bone overflow-hidden border-t border-white/5">
+    <section ref={containerRef} className="py-16 lg:py-32 bg-[#050505] text-bone overflow-hidden border-t border-white/5">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl relative">
         
         {/* Subtle background glow */}
@@ -79,8 +79,8 @@ export default function ConversionPillars() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
           
-          {/* Left Side: Smooth Interactive List (NO accordion layout shift!) */}
-          <div className="lg:col-span-5 flex flex-col relative">
+          {/* Left Side: Smooth Interactive List */}
+          <div className="lg:col-span-5 flex flex-col relative order-2 lg:order-1">
             {/* Animated vertical line */}
             <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-white/5 hidden lg:block"></div>
             <div 
@@ -95,13 +95,13 @@ export default function ConversionPillars() {
                 key={idx}
                 onMouseEnter={() => setActiveTab(idx)}
                 onClick={() => setActiveTab(idx)}
-                className="group relative cursor-pointer py-6 md:py-10 pl-12 lg:pl-10 transition-all duration-500"
+                className="group relative cursor-pointer py-5 md:py-10 pl-10 lg:pl-10 transition-all duration-500"
               >
                 {/* Mobile top border */}
                 <div className={`absolute top-0 left-0 right-0 h-[1px] lg:hidden transition-colors duration-300 ${activeTab === idx ? 'bg-signal' : 'bg-white/5'}`}></div>
 
                 {/* Massive Watermark Number */}
-                <span className={`absolute left-0 lg:-left-4 top-1/2 -translate-y-1/2 font-display font-bold text-[4.5rem] lg:text-[7rem] leading-none pointer-events-none transition-all duration-700 ease-out z-0 ${activeTab === idx ? 'text-signal/10 scale-110' : 'text-white/5 scale-100'}`}>
+                <span className={`absolute left-0 lg:-left-4 top-1/2 -translate-y-1/2 font-display font-bold text-[3rem] sm:text-[4.5rem] lg:text-[7rem] leading-none pointer-events-none transition-all duration-700 ease-out z-0 ${activeTab === idx ? 'text-signal/10 scale-110' : 'text-white/5 scale-100'}`}>
                   0{idx + 1}
                 </span>
 
@@ -126,9 +126,9 @@ export default function ConversionPillars() {
             ))}
           </div>
 
-          {/* Right Side: Stunning 3D Image Panel with Glassmorphism Description */}
+          {/* Right Side: Stunning 3D Image Panel */}
           <BorderGlow 
-            className="lg:col-span-7 relative w-full h-[280px] sm:h-[400px] lg:h-[650px] shadow-2xl"
+            className="lg:col-span-7 relative w-full h-[320px] sm:h-[450px] lg:h-[650px] shadow-2xl order-1 lg:order-2"
             backgroundColor="#0A0A0A"
             colors={['#4A6BF0', '#A1A1AA', '#FFFFFF']}
             borderRadius={32}

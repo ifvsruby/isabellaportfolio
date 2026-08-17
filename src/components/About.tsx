@@ -37,7 +37,7 @@ export default function About() {
   };
 
   return (
-    <section id="sobre" ref={containerRef} className="py-24 lg:py-32 bg-obsidian text-bone border-t border-border-dark overflow-hidden">
+    <section id="sobre" ref={containerRef} className="py-16 lg:py-32 bg-obsidian text-bone border-t border-border-dark overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center">

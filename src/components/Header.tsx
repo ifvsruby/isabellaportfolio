@@ -27,15 +27,15 @@ export default function Header() {
     <>
       <header
         ref={headerRef}
-        className="fixed top-6 left-0 w-full z-50"
+        className="fixed top-3 md:top-6 left-0 w-full z-50"
       >
-        <div className={`mx-auto w-full max-w-[1320px] px-6 flex justify-between md:grid md:grid-cols-[1fr_auto_1fr] items-center rounded-full transition-all duration-500 py-2 ${
+        <div className={`mx-auto w-[90%] md:w-full max-w-[1320px] px-4 md:px-6 flex justify-between md:grid md:grid-cols-[1fr_auto_1fr] items-center rounded-full transition-all duration-500 py-1.5 md:py-2 ${
           isScrolled 
             ? "bg-[#0d0d0d]/90 backdrop-blur-xl border border-white/10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]" 
             : "bg-transparent border border-transparent"
         }`}>
           {/* Logo */}
-          <Link href="/" className="justify-self-start font-display text-xl md:text-2xl tracking-tighter text-white flex items-baseline">
+          <Link href="/" className="justify-self-start font-display text-lg md:text-2xl tracking-tighter text-white flex items-baseline">
             <span className="italic font-light mr-1.5">Isabella</span>
             <span className="font-bold">Marisa</span>
           </Link>
@@ -77,11 +77,11 @@ export default function Header() {
             
             {/* Mobile Toggle */}
             <button
-              className="md:hidden p-2 text-white bg-white/10 rounded-full md:ml-4"
+              className="md:hidden p-1.5 md:p-2 text-white bg-white/10 rounded-full md:ml-4"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle Menu"
             >
-              {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
           </div>
         </div>

@@ -85,16 +85,13 @@ export default function Process() {
   return (
     <section
       ref={containerRef}
-      className="py-24 lg:py-32 bg-obsidian text-bone border-b border-border-dark"
+      className="py-16 lg:py-32 bg-obsidian text-bone border-b border-border-dark"
     >
       <div className="container mx-auto px-4 md:px-8">
         
         <div className="text-center mb-16 lg:mb-24 px-4 md:px-0">
-          <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full mb-8 shadow-2xl">
-            <span className="w-2 h-2 rounded-full bg-signal animate-pulse shadow-[0_0_10px_rgba(74,107,240,0.8)]"></span>
-            <span className="font-mono text-[10px] sm:text-xs tracking-[0.2em] text-mist uppercase font-bold">
-              05 A Metodologia
-            </span>
+          <div className="font-display font-bold text-signal text-xs tracking-[0.2em] mb-6 uppercase">
+            {"// 05 A METODOLOGIA"}
           </div>
           <h2 className="font-display font-bold text-[clamp(2.2rem,5vw,4.5rem)] leading-[1.05] tracking-tighter max-w-4xl mx-auto mb-4 md:mb-6">
             Design sem estratégia é apenas decoração.

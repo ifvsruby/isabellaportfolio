@@ -63,7 +63,7 @@ export default function Services() {
     <section
       id="servicos"
       ref={containerRef}
-      className="py-24 lg:py-32 bg-obsidian text-bone relative"
+      className="py-16 lg:py-32 bg-obsidian text-bone relative"
     >
       <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10">
         

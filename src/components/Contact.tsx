@@ -46,7 +46,7 @@ export default function Contact() {
   );
 
   return (
-    <section id="contato" ref={containerRef} className="pt-24 lg:pt-32 bg-obsidian text-bone overflow-hidden flex flex-col">
+    <section id="contato" ref={containerRef} className="pt-16 lg:pt-32 bg-obsidian text-bone overflow-hidden flex flex-col">
       
       {/* Statistics Block */}
       <div className="stats-container container mx-auto px-4 md:px-8 max-w-6xl mb-8 z-10 relative">

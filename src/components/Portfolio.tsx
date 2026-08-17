@@ -47,7 +47,7 @@ export default function Portfolio() {
     <section
       ref={containerRef}
       id="projetos"
-      className="relative min-h-screen py-24 lg:py-0 bg-[#050505] text-bone flex flex-col justify-center overflow-hidden"
+      className="relative min-h-screen py-16 lg:py-0 bg-[#050505] text-bone flex flex-col justify-center overflow-hidden"
     >
       {/* Optimized Background noise (no mix-blend-mode for performance) */}
       <div className="absolute inset-0 z-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.02] pointer-events-none"></div>

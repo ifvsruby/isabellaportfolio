@@ -83,7 +83,7 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" ref={containerRef} className="py-24 lg:py-32 bg-obsidian text-bone border-t border-white/5 relative z-10">
+    <section id="faq" ref={containerRef} className="py-16 lg:py-32 bg-obsidian text-bone border-t border-white/5 relative z-10">
       <div className="container mx-auto px-4 max-w-4xl">
         
         <div className="faq-header text-center mb-16 md:mb-24">

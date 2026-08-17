@@ -37,7 +37,7 @@ export default function Preloader() {
     >
       <div className="preloader-content opacity-0 translate-y-8 flex flex-col items-center gap-6">
         {/* Encrypted Name Effect */}
-        <h1 className="font-display text-[2rem] md:text-[3rem] tracking-[0.2em] uppercase flex items-baseline">
+        <h1 className="font-display text-[1.35rem] sm:text-[1.75rem] md:text-[3rem] tracking-[0.2em] uppercase flex items-baseline whitespace-nowrap">
           <EncryptedText 
             text="Isabella" 
             className="italic font-light mr-3"

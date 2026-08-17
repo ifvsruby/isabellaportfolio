@@ -34,15 +34,15 @@ export default function Hero() {
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center pointer-events-none">
         
         {/* Top Navbar / Eyebrow Info */}
-        <div className="hero-text w-full max-w-7xl flex flex-col md:flex-row justify-between items-center mb-6 lg:mb-24 opacity-80 gap-6 md:gap-0">
-          <div className="hidden md:flex items-center gap-4">
+        <div className="hero-text w-full max-w-7xl hidden md:flex flex-row justify-between items-center mb-24 opacity-80">
+          <div className="flex items-center gap-4">
              <div className="w-12 h-px bg-white/20"></div>
              <span className="font-mono text-[10px] tracking-widest text-mist uppercase">Design Estratégico</span>
           </div>
           
 
           
-          <div className="hidden md:flex items-center gap-4">
+          <div className="flex items-center gap-4">
              <span className="font-mono text-[10px] tracking-widest text-mist uppercase">Alta Conversão</span>
              <div className="w-12 h-px bg-white/20"></div>
           </div>
@@ -54,13 +54,13 @@ export default function Hero() {
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[80vw] h-[40vh] bg-signal/15 blur-[90px] rounded-full pointer-events-none md:hidden z-0"></div>
 
           <div className="hero-text overflow-hidden mb-4 md:mb-6 z-10 relative">
-            <span className="font-mono text-[10px] md:text-sm text-mist tracking-[0.3em] md:tracking-[0.4em] uppercase block text-center mt-4 md:mt-0">
+            <span className="font-mono text-xs md:text-sm text-mist tracking-[0.3em] md:tracking-[0.4em] uppercase block text-center mt-4 md:mt-0">
               Um bom negócio não deveria
             </span>
           </div>
           
           <h1 className="hero-text font-display flex flex-col items-center justify-center z-10 text-center mix-blend-plus-lighter w-full relative">
-            <span className="block text-[clamp(3.2rem,13vw,7.5rem)] lg:text-[9rem] xl:text-[11rem] leading-[0.75] md:leading-[0.85] tracking-tighter drop-shadow-2xl font-bold">
+            <span className="block text-[clamp(4rem,15.5vw,7.5rem)] lg:text-[9rem] xl:text-[11rem] leading-[0.75] md:leading-[0.85] tracking-tighter drop-shadow-2xl font-bold">
               <ShinyText 
                 text="PARECER COMUM" 
                 speed={3} 
@@ -69,7 +69,7 @@ export default function Hero() {
                 className="font-black md:font-bold tracking-tighter" 
               />
             </span>
-            <span className="font-light text-bone/70 block italic lowercase text-[clamp(2.5rem,10vw,6rem)] lg:text-[8rem] xl:text-[10rem] leading-[0.8] tracking-tight mt-0 md:mt-4 pr-4 md:pr-12">
+            <span className="font-light text-bone/70 block italic lowercase text-[clamp(3rem,12vw,6rem)] lg:text-[8rem] xl:text-[10rem] leading-[0.8] tracking-tight mt-0 md:mt-4 pr-4 md:pr-12">
               na internet.
             </span>
           </h1>
@@ -81,14 +81,14 @@ export default function Hero() {
             <p className="hidden md:block text-mist text-base md:text-xl font-body leading-relaxed text-center font-light">
               Ajudo marcas ambiciosas a traduzirem seu valor real para o digital. Sites e Landing Pages de precisão técnica que transformam visitantes curiosos em <strong className="text-bone font-medium">clientes decididos</strong>.
             </p>
-            <p className="md:hidden text-mist/80 text-[13px] leading-relaxed text-center font-light max-w-[270px]">
+            <p className="md:hidden text-mist/80 text-[15px] leading-relaxed text-center font-light max-w-[320px]">
               Crio sites e Landing Pages que transformam valor em presença digital e visitantes em clientes.
             </p>
           </div>
           
-          <div className="relative group/cta pointer-events-auto mt-2 w-[84vw] max-w-[290px] md:w-auto flex justify-center">
+          <div className="relative group/cta pointer-events-auto mt-2 w-[88vw] max-w-[340px] md:w-auto flex justify-center">
             {/* Ambient glow behind the button */}
-            <div className="absolute inset-0 bg-signal/20 blur-2xl rounded-full scale-150 group-hover/cta:scale-175 transition-transform duration-700"></div>
+            <div className="absolute inset-0 bg-signal/20 blur-2xl rounded-full scale-150 lg:group-hover/cta:scale-175 transition-transform duration-700"></div>
             
             <Link
               href="#contato"

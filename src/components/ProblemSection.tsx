@@ -52,7 +52,7 @@ export default function ProblemSection() {
   return (
     <section
       ref={containerRef}
-      className="py-24 lg:py-32 bg-obsidian border-b border-border-dark overflow-hidden"
+      className="py-16 lg:py-32 bg-obsidian border-b border-border-dark overflow-hidden"
     >
       <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         
