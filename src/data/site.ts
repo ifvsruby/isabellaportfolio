@@ -5,7 +5,7 @@ export const siteConfig = {
   role: "Web Designer & Desenvolvedora",
   city: "Brasil",
   email: "isabellamarisa407@gmail.com",
-  whatsapp: "+5531973325458",
+  whatsapp: "https://wa.me/message/IJZIJUURAMFEJ1",
   instagram: "https://instagram.com/ifsvbella",
   behance: "https://www.behance.net/ifvsbella",
   linkedin: "", // TODO: Update or leave empty
