@@ -69,12 +69,14 @@ export default function Header() {
 
           {/* Right CTA / Mobile Toggle */}
           <div className="justify-self-end flex items-center ml-auto">
-            <Link
-              href="#contato"
+            <a
+              href={siteConfig.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
               className="!hidden md:!inline-flex fuzzy-btn font-display text-[11px] px-8 py-3.5"
             >
               INICIAR PROJETO
-            </Link>
+            </a>
             
             {/* Mobile Toggle */}
             <button

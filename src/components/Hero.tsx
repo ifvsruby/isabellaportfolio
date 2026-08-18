@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { siteConfig } from "@/data/site";
 
 import ShinyText from "./ui/ShinyText";
 
@@ -31,6 +32,9 @@ export default function Hero() {
       ref={containerRef}
       className="relative min-h-screen flex items-center justify-center py-12 overflow-hidden bg-[#050505] text-center"
     >
+      {/* Subtle Mobile Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[60vh] bg-signal/15 blur-[120px] rounded-full pointer-events-none md:hidden z-0"></div>
+
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center pointer-events-none">
         
         {/* Top Navbar / Eyebrow Info */}
@@ -50,9 +54,6 @@ export default function Hero() {
 
         {/* Editorial / High-End Headline */}
         <div className="relative w-full flex flex-col items-center justify-center">
-          {/* Subtle Mobile Glow */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[80vw] h-[40vh] bg-signal/15 blur-[90px] rounded-full pointer-events-none md:hidden z-0"></div>
-
           <div className="hero-text overflow-hidden mb-4 md:mb-6 z-10 relative">
             <span className="font-mono text-xs md:text-sm text-mist tracking-[0.3em] md:tracking-[0.4em] uppercase block text-center mt-4 md:mt-0">
               Um bom negócio não deveria
@@ -90,12 +91,14 @@ export default function Hero() {
             {/* Ambient glow behind the button */}
             <div className="absolute inset-0 bg-signal/20 blur-2xl rounded-full scale-150 lg:group-hover/cta:scale-175 transition-transform duration-700"></div>
             
-            <Link
-              href="#contato"
+            <a
+              href={siteConfig.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
               className="fuzzy-btn font-display relative z-10 w-full md:w-auto text-center"
             >
               QUERO MEU PROJETO
-            </Link>
+            </a>
           </div>
         </div>
 
